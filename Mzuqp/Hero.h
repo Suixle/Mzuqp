@@ -8,7 +8,7 @@ private:
 	float Speed = 1;
 
 	void Move(); //Do stuff with this
-	void Input()
+	void Input() //Take the input and do jazz
 	{
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 			Velocity.x = Speed;
@@ -20,7 +20,7 @@ private:
 	}
 public:
 
-	Hero() {
+	Hero() { //Initialize and stuff
 		sf::Texture spriteSheet; spriteSheet.loadFromFile("srite.png");
 		setTexture(spriteSheet);
 		setTextureRect(sf::IntRect(0, 0, 32, 32));
